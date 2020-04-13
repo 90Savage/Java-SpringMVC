@@ -51,7 +51,7 @@
 
     </form>
 </div>
-<li><a href="jsp/teacherTable.jsp">返回上一页</a></li>
-<li><a href="../index.jsp">返回首页</a></li>
+<li><a href="${pageContext.request.contextPath}/studentTable">返回上一页</a></li>
+<li><a href="${pageContext.request.contextPath}../../index.jsp">返回首页</a></li>
 </body>
 </html>
