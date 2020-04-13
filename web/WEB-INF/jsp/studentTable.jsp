@@ -11,8 +11,8 @@
 <h2>请选择你要操作的类型：</h2>
 <div style="margin-left: 50px">
   <ul style="line-height: 40px">
-    <li><a href="jsp/submitHomework.jsp">提交作业</a></li>
-    <li><a href="../index.jsp">返回首页</a></li>
+    <li><a href="${pageContext.request.contextPath}/willSubmit">提交作业</a></li>
+    <li><a href="../../index.jsp">返回首页</a></li>
   </ul>
 </div>
 

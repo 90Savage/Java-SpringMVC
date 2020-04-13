@@ -55,6 +55,6 @@
 
     </table>
 </form>
-<li><a href="../index.jsp">返回首页</a></li>
+<li><a href="../../index.jsp">返回首页</a></li>
 </body>
 </html>

@@ -16,10 +16,10 @@
 <h2>请选择你要操作的类型：</h2>
 <div style="margin-left: 50px">
   <ul style="line-height: 40px">
-    <li><a href="addHomework.jsp">添加作业</a></li>
-    <li><a href="addStudent.jsp">添加学生</a></li>
-    <li><a href="showHomework.jsp">显示所有作业</a></li>
-    <li><a href="../index.jsp">返回首页</a></li>
+    <li><a href="${pageContext.request.contextPath}/to_addHomework">添加作业</a></li>
+    <li><a href="${pageContext.request.contextPath}/to_addStudent">添加学生</a></li>
+    <li><a href="${pageContext.request.contextPath}/to_showHomework">显示所有作业</a></li>
+    <li><a href="../../index.jsp">返回首页</a></li>
   </ul>
 </div>
 

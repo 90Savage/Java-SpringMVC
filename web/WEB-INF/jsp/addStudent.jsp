@@ -33,7 +33,7 @@
         </table>
     </form>
 </div>
-<li><a href="teacherTable.jsp">返回上一页</a></li>
+<li><a href="${pageContext.request.contextPath}/teacherTable">返回上一页</a></li>
 
 </body>
 </html>

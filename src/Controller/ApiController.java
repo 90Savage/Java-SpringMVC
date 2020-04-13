@@ -32,8 +32,70 @@ public class ApiController {
     ApplicationContext applicationContext2 = new AnnotationConfigApplicationContext(jdbc.StudentJdbc.class);
     StudentJdbc jdbc2 = (StudentJdbc) applicationContext2.getBean("jdbc2");
 
-    @RequestMapping(path = "/showHomework", method = RequestMethod.GET)
-    public ModelAndView showHomework(){
+    @RequestMapping(path = "/to_addHomework", method = RequestMethod.GET)
+    public ModelAndView to_addHomework(){
+
+        List<Homework> list = jdbc1.showHomework();
+
+        return new ModelAndView("addHomework");
+    }
+
+    @RequestMapping(path = "/to_addStudent", method = RequestMethod.GET)
+    public ModelAndView to_addStudent(){
+
+        List<Homework> list = jdbc1.showHomework();
+
+        return new ModelAndView("addStudent");
+    }
+
+    @RequestMapping(path = "/to_showHomework", method = RequestMethod.GET)
+    public ModelAndView to_showHomework(){
+
+        List<Homework> list = jdbc1.showHomework();
+
+        return new ModelAndView("showHomework");
+    }
+
+    @RequestMapping(path = "/tto_first", method = RequestMethod.GET)
+    public ModelAndView tto_first(){
+
+        List<Homework> list = jdbc1.showHomework();
+
+        return new ModelAndView("teacherTable");
+    }
+    @RequestMapping(path = "/submitHomework", method = RequestMethod.GET)
+    public ModelAndView submitHomework(){
+
+
+
+        return new ModelAndView("submitHomework");
+    }
+    @RequestMapping(path = "/studentTable", method = RequestMethod.GET)
+    public ModelAndView studentTable(){
+
+        List<Homework> list = jdbc1.showHomework();
+
+        return new ModelAndView("studentTable");
+    }
+
+    @RequestMapping(path = "/sto_first", method = RequestMethod.GET)
+    public ModelAndView sto_first(){
+
+        List<Homework> list = jdbc1.showHomework();
+
+        return new ModelAndView("showHomework");
+    }
+
+    @RequestMapping(path = "/teacherTable", method = RequestMethod.GET)
+    public ModelAndView teacherTable(){
+
+        List<Homework> list = jdbc1.showHomework();
+
+        return new ModelAndView("teacherTable");
+    }
+
+    @RequestMapping(path = "/showAllHomework", method = RequestMethod.GET)
+    public ModelAndView showAllHomework(){
 
         List<Homework> list = jdbc1.showHomework();
 

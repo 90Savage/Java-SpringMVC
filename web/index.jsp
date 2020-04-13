@@ -11,8 +11,8 @@
 <h2>请选择你要操作的类型：</h2>
 <div style="margin-left: 50px">
   <ul style="line-height: 40px">
-    <li><a href="${pageContext.request.contextPath}/jsp/teacherTable.jsp">教师登陆</a></li>
-    <li><a href="${pageContext.request.contextPath}/showHomework">学生登陆</a></li>
+    <li><a href="${pageContext.request.contextPath}/teacherTable">教师登陆</a></li>
+    <li><a href="${pageContext.request.contextPath}/studentTable">学生登陆</a></li>
   </ul>
 </div>
 
